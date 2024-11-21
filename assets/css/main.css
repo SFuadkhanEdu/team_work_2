@@ -13,6 +13,12 @@ body {
   background-color: #222;
 }
 
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Rubik", sans-serif;
 }
@@ -21,10 +27,177 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Oswald", sans-serif;
 }
 
-.container {
-  max-width: 1140px;
-  padding: 0 20px;
+#services .container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+#services .container .services h1 {
+  color: #ff8b00;
+  font-size: 45px;
+}
+#services .container .about p {
+  color: #939393;
+  text-align: center;
+}
+#services .container .cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+@media only screen and (max-width: 850px) {
+  #services .container .cards {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #services .container .cards {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#services .container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#services .container .card_icon {
+  height: 50px;
+  width: 50px;
+  background-color: #3b3b3b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services .container .card_icon i {
+  color: #ff8b00;
+  background-color: #3b3b3b;
+  font-size: 30px;
+}
+#services .container .card_name h2 {
+  color: white;
+}
+#services .container .card_about p {
+  color: #939393;
+}
+#services .container .section_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#our_team .container .outteam_text {
+  width: 100%;
+  height: 140px;
+}
+#our_team .container .outteam_text h1 {
+  color: #ff8b00;
+  text-align: center;
+  font-size: 3rem;
+}
+#our_team .container .outteam_text p {
+  height: 55px;
+  max-width: 634px;
+  margin: auto;
+  color: #939393;
+  text-align: center;
+}
+#our_team .container .cart_contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 20px;
+}
+#our_team .container .cart_contanier .cart_contanier_carts {
+  width: 350px;
+  height: 304px;
+  background-color: #333;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+#our_team .container .cart_contanier .cart_contanier_carts .img_contanier {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: red;
   margin: 0 auto;
+  overflow: hidden;
+}
+#our_team .container .cart_contanier .cart_contanier_carts .img_contanier img {
+  width: 100%;
+  height: 100%;
+}
+#our_team .container .cart_contanier .cart_contanier_carts h3 {
+  color: #ff8b00;
+  text-align: center;
+  margin: 8px 0;
+}
+#our_team .container .cart_contanier .cart_contanier_carts p {
+  color: #939393;
+  text-align: center;
+  margin: 5px 0;
+}
+#our_team .container .cart_contanier .sosial_contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+#our_team .container .cart_contanier .sosial_contanier .sosial_contanier_boxs {
+  height: 30px;
+  width: 30px;
+  background-color: #ff8b00;
+  color: white;
+  border: 1px solid #ff8b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition-duration: 400ms;
+}
+#our_team .container .cart_contanier .sosial_contanier .sosial_contanier_boxs:hover {
+  background-color: #333;
+}
+
+#questions .faq-header {
+  color: #ff9800;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 32px;
+  padding: 112px 0;
+}
+#questions .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+#questions .container .faq-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#questions .container .faq-item h3 {
+  color: #ff9800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#questions .container .faq-item p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.6;
 }
 
 #our_blog .container .our_blog__title {
