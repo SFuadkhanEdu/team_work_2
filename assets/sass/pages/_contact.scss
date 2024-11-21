@@ -48,12 +48,14 @@
       width: 215px;
       height: 50px;
       background-color: #333;
+      text-align: center;
     }
 
     #firstnamee {
       width: 215px;
       height: 50px;
       background-color: #333;
+      text-align: center;
     }
 
     .email {
@@ -66,6 +68,7 @@
       height: 50px;
       margin-top: 10px;
       background-color: #333;
+      text-align: center;
     }
 
     .mesaage {
@@ -90,6 +93,7 @@
     }
     .sendbox p{
       margin-top: 15px;
+      color: aliceblue;
     }
 
     .contaright {
@@ -101,9 +105,11 @@
       color: #ff8b00;
       font-size: 2rem;
       text-align: left;
+      margin-top: 20px;
     }
     .rightwords p{
       text-align: left;
+      margin-top: 20px;
     }
 
 
@@ -113,13 +119,84 @@
         margin-top: 20px;
         background-color: #ff8b00;
         text-align: center;
-     /*    transform: translateX(90px); */
+    
       }
 
       .start p{
         text-align: center;
         margin-top: 20px;
+        color: aliceblue;
         
       }
+  }
+}
+
+
+
+
+
+/* Media Querylər */
+@media (max-width: 768px) {
+  .contaleft, .contaright {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .firstnameboxs {
+    flex-direction: column;
+  }
+
+  #firstname, #firstnamee {
+    width: 100%;
+  }
+
+  #emailinp, #messageinp {
+    width: 100%;
+  }
+
+  .sendbox {
+    width: 100%;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  .rightwords h2 {
+    font-size: 1.5rem;
+  }
+
+  .start {
+    width: 100%;
+  }
+
+  .mainconta {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  #firstname, #firstnamee, #emailinp, #messageinp {
+    width: 100%;
+  }
+
+  .sendbox {
+    width: 100%;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  .rightwords h2 {
+    font-size: 1.2rem;
+  }
+
+  .start {
+    width: 100%;
   }
 }
