@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #222;
 }
 
 ul, ol, a {
@@ -15,4 +16,71 @@ body {
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#services .container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+#services .container .services h1 {
+  color: #ff8b00;
+  font-size: 45px;
+}
+#services .container .about p {
+  color: #939393;
+  text-align: center;
+}
+#services .container .cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+@media only screen and (max-width: 850px) {
+  #services .container .cards {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #services .container .cards {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#services .container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#services .container .card_icon {
+  height: 50px;
+  width: 50px;
+  background-color: #3b3b3b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services .container .card_icon i {
+  color: #ff8b00;
+  background-color: #3b3b3b;
+  font-size: 30px;
+}
+#services .container .card_name h2 {
+  color: white;
+}
+#services .container .card_about p {
+  color: #939393;
+}
+#services .container .section_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
