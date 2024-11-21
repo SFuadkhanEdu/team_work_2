@@ -1,0 +1,131 @@
+// NAv START
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  z-index: 100;
+  position: fixed;
+  background-color: #222222;
+  width: 100%;
+  height: 100px;
+  padding-block: 30px;
+  .navLogo {
+    display: flex;
+
+    a {
+      color: #ff8b00;
+      font-size: 28px;
+    }
+  }
+  .navLinks {
+    display: flex;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      li {
+        color: #fff;
+
+        a {
+          color: inherit;
+          i {
+            margin-left: 5px;
+            font-size: 12px;
+          }
+        }
+      }
+      .dropdown:hover .dropdown-content {
+        visibility: visible;
+        transform: translateY(0);
+      }
+      .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        transition: all 100ms linear;
+        visibility: hidden;
+        transform: translateY(20px);
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        z-index: 1;
+        border-top: 5px solid #ff8b00;
+        a {
+          width: 100%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          color: #000;
+          padding-inline: 20px;
+          &:hover {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .hamburger {
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    align-items: center;
+    font-size: 24px;
+  }
+  // .show {
+  //   transition: transform 200ms linear;
+  //   transform: translateX(0) !important;
+  // }
+  .hiddenNavbar {
+    box-shadow: -20px 0 30px rgba(0, 0, 0, 0.1);
+    padding-top: 100px;
+    padding-inline: 20px;
+    background-color: #fff;
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 200ms linear;
+    .hiddenNavbar_close {
+      cursor: pointer;
+      color: #a99;
+      font-size: 14px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      li {
+        font-size: 20px;
+        color: #000;
+        a {
+          transition: color 100ms linear;
+
+          color: inherit;
+          &:hover {
+            color: #ff8b00;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 820px) {
+  .navLinks {
+    display: none !important;
+  }
+  .hamburger {
+    display: flex !important;
+  }
+  .show {
+    transition: transform 200ms linear;
+    transform: translateX(0) !important;
+  }
+}
+// NAV END
