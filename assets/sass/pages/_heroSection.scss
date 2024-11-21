@@ -1,5 +1,6 @@
 #hero_section {
-  .container {
+    margin-top: 100px;
+    .container {
     .swiper-button-prev::after {
       font-family: "Material Icons";
       content: "\e314";
@@ -30,7 +31,7 @@
       width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center top;
       
       .text_box {
         position: absolute;
