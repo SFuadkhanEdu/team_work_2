@@ -1,9 +1,11 @@
+// NAv START
 .flex {
   display: flex;
   justify-content: space-between;
 }
 
 nav {
+  z-index: 100;
   position: fixed;
   background-color: #222222;
   width: 100%;
@@ -126,3 +128,4 @@ nav {
     transform: translateX(0) !important;
   }
 }
+// NAV END
