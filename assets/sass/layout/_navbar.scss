@@ -3,8 +3,15 @@
   display: flex;
   justify-content: space-between;
 }
-
+nav.scrolled {
+  transition: height 200ms linear;
+  height: 80px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
 nav {
+  transition: all 200ms linear;
+  top: 0;
+  left: 0;
   z-index: 100;
   position: fixed;
   background-color: #222222;
@@ -15,8 +22,10 @@ nav {
     display: flex;
 
     a {
+      font-family: "Oswald", sans-serif;
       color: #ff8b00;
-      font-size: 28px;
+      font-size: 18px;
+      font-weight: 600;
     }
   }
   .navLinks {
