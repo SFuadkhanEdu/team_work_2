@@ -27,7 +27,48 @@
   <body>
     <!-- NAVBAR START  -->
     <nav>
-      <div class="container"></div>
+      <div class="container flex">
+        <div class="navLogo">
+          <a href="#">SKATER</a>
+        </div>
+        <div class="navLinks">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <div class="dropdown">
+              <li>
+                <a href="#">About<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <div class="dropdown-content">
+                <a href="#">Team</a>
+                <a href="#">Pricing</a>
+                <a href="#">FAQ</a>
+                <a href="#">More</a>
+              </div>
+            </div>
+
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Book Now</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="hiddenNavbar">
+        <div class="hiddenNavbar_close">
+          <h2><i class="fa-solid fa-x"></i></h2>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Book Now</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- NAVBAR END  -->
     <main>
@@ -94,6 +135,8 @@
     <script>
       AOS.init();
     </script>
+    <script src="./assets/js/navbar.js"></script>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -15,4 +15,133 @@ body {
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  position: fixed;
+  background-color: #222222;
+  width: 100%;
+  height: 100px;
+  padding-block: 30px;
+}
+nav .navLogo {
+  display: flex;
+}
+nav .navLogo a {
+  color: #ff8b00;
+  font-size: 28px;
+}
+nav .navLinks {
+  display: flex;
+}
+nav .navLinks ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .navLinks ul li {
+  color: #fff;
+}
+nav .navLinks ul li a {
+  color: inherit;
+}
+nav .navLinks ul li a i {
+  margin-left: 5px;
+  font-size: 12px;
+}
+nav .navLinks ul .dropdown:hover .dropdown-content {
+  visibility: visible;
+  transform: translateY(0);
+}
+nav .navLinks ul .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  transition: all 100ms linear;
+  visibility: hidden;
+  transform: translateY(20px);
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  border-top: 5px solid #ff8b00;
+}
+nav .navLinks ul .dropdown-content a {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding-inline: 20px;
+}
+nav .navLinks ul .dropdown-content a:hover {
+  background-color: #fff;
+}
+nav .hamburger {
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  align-items: center;
+  font-size: 24px;
+}
+nav .hiddenNavbar {
+  box-shadow: -20px 0 30px rgba(0, 0, 0, 0.1);
+  padding-top: 100px;
+  padding-inline: 20px;
+  background-color: #fff;
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 200ms linear;
+}
+nav .hiddenNavbar .hiddenNavbar_close {
+  cursor: pointer;
+  color: #a99;
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+nav .hiddenNavbar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+nav .hiddenNavbar ul li {
+  font-size: 20px;
+  color: #000;
+}
+nav .hiddenNavbar ul li a {
+  transition: color 100ms linear;
+  color: inherit;
+}
+nav .hiddenNavbar ul li a:hover {
+  color: #ff8b00;
+}
+
+@media (max-width: 820px) {
+  .navLinks {
+    display: none !important;
+  }
+  .hamburger {
+    display: flex !important;
+  }
+  .show {
+    transition: transform 200ms linear;
+    transform: translateX(0) !important;
+  }
 }/*# sourceMappingURL=main.css.map */
