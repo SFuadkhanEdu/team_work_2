@@ -1,8 +1,106 @@
 #session {
   .container {
-       .session_text{
+    .session_text {
+      margin: 60px 0;
+      h1 {
+        color: #ff8b00;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      p {
+        max-width: 635px;
+        height: 55px;
+        color: #939393;
+        margin: auto;
+        text-align: center;
         
-       }
+      }
+    }
+
+    .session_cart_contanier {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+
+
+      .session_cart_contanier_carts {
+        width: 350px;
+        height: 560px;
+        background-color: #333;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        padding-bottom: 30px;
+
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          gap: 5px;
+
+          h1 {
+            font-size: 3rem;
+            color: #ff8b00;
+          }
+
+          p {
+            margin-bottom: 10px;
+            color: #cccccc;
+
+          }
+        }
+
+        h1 {
+          color: white;
+        }
+
+        ul {
+
+          li {
+            margin: 15px 0;
+            font-size: 19px;
+            color: #939393;
+            width: 270px;
+            text-align: start;
+            display: flex;
+
+            i {
+              color: #71bc42;
+              margin: 5px;
+            }
+          }
+
+        }
+           .orange_center_button{
+            background-color: #ff8b00;
+            .orange_center_button:hover{
+              background-color:#cb750c ;
+            }
+           }
+        button {
+          height: 42px;
+          width: 108px;
+          background-color: #6c757d;
+          border: none;
+          border-radius: 8px;
+          transition-duration: 400ms;
+          cursor: pointer ;
+
+        }
+        button:hover{
+          background-color: #575d62;
+        }
+      }
+
+    }
 
   }
 }
