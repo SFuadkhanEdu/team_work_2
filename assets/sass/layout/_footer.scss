@@ -1,0 +1,118 @@
+footer {
+  background-color: #333;
+  padding-block: 128px;
+  p {
+    font-family: "Rubik", sans-serif;
+  }
+  .heading {
+    font-family: "Oswald", sans-serif;
+  }
+}
+.footer_Form {
+  display: flex;
+  .footer_Form_AboutUs {
+    width: 30%;
+    color: #fff;
+    .heading {
+      margin-bottom: 20px;
+    }
+    p {
+      color: #fff;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      font-size: 16px;
+    }
+  }
+
+  .footer_Form_Features {
+    width: 30%;
+    color: #fff;
+    margin-left: 60px;
+    .heading {
+      margin-bottom: 20px;
+    }
+    .footer_Form_Features_Links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      a {
+        color: #939393;
+        font-size: 16px;
+        font-weight: 400;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .footer_Form_and_Social {
+    display: flex;
+    flex-direction: column;
+    .heading {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .footer_Form_and_Social_Form {
+      display: flex;
+      overflow: hidden;
+      height: 55px;
+      input {
+        width: 100%;
+        font-size: 16px;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #939393;
+        background-color: transparent;
+        padding: 12px 12px;
+        font-weight: 500;
+        color: #fff;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        background-color: #ff8b00;
+        outline: none;
+        border: none;
+        padding-inline: 20px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+      }
+    }
+    .footer_Form_and_Social_Social {
+      margin-top: 20px;
+      a {
+        margin-right: 20px;
+        color: #ffffff69;
+        font-size: 24px;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .footer_Form {
+    flex-direction: column;
+    .footer_Form_AboutUs {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .footer_Form_Features {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .footer_Form_and_Social {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .footer_Form_and_Social_Form {
+      justify-content: center;
+    }
+  }
+}
