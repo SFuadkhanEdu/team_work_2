@@ -1,4 +1,41 @@
 #questions {
+
+ .faq-header{
+  color: #ff9800;
+text-align: center;
+text-transform: uppercase;
+font-weight: 500;
+line-height: 1.2;
+font-size: 32px;
+padding: 112px 0;
+ }
   .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+   
+
+    .faq-item {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+      h3 {
+        color: #ff9800;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #ddd;
+        line-height: 1.6;
+      }
+
+    
+
+
+    }
   }
 }
