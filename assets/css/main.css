@@ -27,9 +27,13 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Oswald", sans-serif;
 }
 
+#our_team {
+  margin-bottom: 150px;
+}
 #our_team .container .outteam_text {
   width: 100%;
   height: 140px;
+  margin-bottom: 40px;
 }
 #our_team .container .outteam_text h1 {
   color: #ff8b00;
@@ -39,9 +43,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 #our_team .container .outteam_text p {
   height: 55px;
   max-width: 634px;
-  margin: auto;
+  margin: 10px;
   color: #939393;
   text-align: center;
+  margin: auto;
 }
 #our_team .container .cart_contanier {
   display: flex;
@@ -60,14 +65,14 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #our_team .container .cart_contanier .cart_contanier_carts .img_contanier {
   height: 130px;
   width: 130px;
   border-radius: 50%;
   background-color: red;
-  margin: 0 auto;
   overflow: hidden;
 }
 #our_team .container .cart_contanier .cart_contanier_carts .img_contanier img {
@@ -84,6 +89,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   text-align: center;
   margin: 5px 0;
 }
+#our_team .container .cart_contanier .cart_contanier_carts:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 #our_team .container .cart_contanier .sosial_contanier {
   display: flex;
   justify-content: center;
@@ -96,13 +105,98 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   width: 30px;
   background-color: #ff8b00;
   color: white;
-  border: 1px solid #ff8b00;
+  border: 2px solid #ff8b00;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
   transition-duration: 400ms;
+  cursor: pointer;
+  margin-bottom: 60px;
 }
 #our_team .container .cart_contanier .sosial_contanier .sosial_contanier_boxs:hover {
   background-color: #333;
+}
+
+#session .container .session_text {
+  margin: 60px 0;
+}
+#session .container .session_text h1 {
+  color: #ff8b00;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+#session .container .session_text p {
+  max-width: 635px;
+  height: 55px;
+  color: #939393;
+  margin: auto;
+  text-align: center;
+}
+#session .container .session_cart_contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts {
+  width: 350px;
+  height: 560px;
+  background-color: #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  padding-bottom: 30px;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts div {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts div h1 {
+  font-size: 3rem;
+  color: #ff8b00;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts div p {
+  margin-bottom: 10px;
+  color: #cccccc;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts h1 {
+  color: white;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts ul li {
+  margin: 15px 0;
+  font-size: 19px;
+  color: #939393;
+  width: 270px;
+  text-align: start;
+  display: flex;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts ul li i {
+  color: #71bc42;
+  margin: 5px;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts .orange_center_button {
+  background-color: #ff8b00;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts .orange_center_button .orange_center_button:hover {
+  background-color: #cb750c;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts button {
+  height: 42px;
+  width: 108px;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 8px;
+  transition-duration: 400ms;
+  cursor: pointer;
+}
+#session .container .session_cart_contanier .session_cart_contanier_carts button:hover {
+  background-color: #575d62;
 }/*# sourceMappingURL=main.css.map */

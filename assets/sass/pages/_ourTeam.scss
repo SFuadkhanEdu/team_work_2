@@ -1,9 +1,11 @@
 #our_team {
+    margin-bottom: 150px;
     .container {
 
         .outteam_text {
             width: 100%;
             height: 140px;
+            margin-bottom: 40px;
 
             h1 {
                 color: #ff8b00;
@@ -14,9 +16,10 @@
             p {
                 height: 55px;
                 max-width: 634px;
-               margin: auto;
+                margin: 10px;
                 color: #939393;
                 text-align: center;
+                margin: auto;
             }
         }
 
@@ -29,7 +32,8 @@
             height: fit-content;
             gap: 20px;
 
-            .cart_contanier_carts {
+
+            .cart_contanier_carts{
                 width: 350px;
                 height: 304px;
                 background-color: #333;
@@ -37,25 +41,24 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin-top: 30px;
-
-
-
+                align-items: center;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                
                 .img_contanier {
                     height: 130px;
                     width: 130px;
                     border-radius: 50%;
                     background-color: red;
-                    margin: 0 auto;
                     overflow: hidden;
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
-                        
+
                     }
 
                 }
-
+              
                 h3 {
                     color: #ff8b00;
                     text-align: center;
@@ -69,7 +72,10 @@
                     margin: 5px 0;
                 }
             }
-
+            .cart_contanier_carts:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+              }
             .sosial_contanier {
                 display: flex;
                 justify-content: center;
@@ -84,12 +90,14 @@
                     width: 30px;
                     background-color: #ff8b00;
                     color: white;
-                    border: 1px solid #ff8b00;
+                    border: 2px solid #ff8b00;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     border-radius: 3px;
                     transition-duration: 400ms;
+                    cursor: pointer;
+                    margin-bottom: 60px;
                 }
 
                 .sosial_contanier_boxs:hover {
