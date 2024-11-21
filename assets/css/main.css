@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 nav {
+  z-index: 100;
   position: fixed;
   background-color: #222222;
   width: 100%;
