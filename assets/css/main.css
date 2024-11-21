@@ -29,7 +29,16 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   font-family: "Oswald", sans-serif;
 }
 
@@ -44,7 +53,16 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   justify-content: space-between;
 }
 
+nav.scrolled {
+  transition: height 200ms linear;
+  height: 80px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 nav {
+  transition: all 200ms linear;
+  top: 0;
+  left: 0;
   z-index: 100;
   position: fixed;
   background-color: #222222;
@@ -56,8 +74,10 @@ nav .navLogo {
   display: flex;
 }
 nav .navLogo a {
+  font-family: "Oswald", sans-serif;
   color: #ff8b00;
-  font-size: 28px;
+  font-size: 18px;
+  font-weight: 600;
 }
 nav .navLinks {
   display: flex;
