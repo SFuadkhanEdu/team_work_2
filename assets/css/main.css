@@ -10,9 +10,99 @@ ul, ol, a {
 }
 
 body {
+  background-color: #222;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
   font-family: "Rubik", sans-serif;
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Oswald", sans-serif;
+}
+
+#our_team .container .outteam_text {
+  width: 100%;
+  height: 140px;
+}
+#our_team .container .outteam_text h1 {
+  color: #ff8b00;
+  text-align: center;
+  font-size: 3rem;
+}
+#our_team .container .outteam_text p {
+  height: 55px;
+  max-width: 634px;
+  margin: auto;
+  color: #939393;
+  text-align: center;
+}
+#our_team .container .cart_contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  gap: 20px;
+}
+#our_team .container .cart_contanier .cart_contanier_carts {
+  width: 350px;
+  height: 304px;
+  background-color: #333;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+#our_team .container .cart_contanier .cart_contanier_carts .img_contanier {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#our_team .container .cart_contanier .cart_contanier_carts .img_contanier img {
+  width: 100%;
+  height: 100%;
+}
+#our_team .container .cart_contanier .cart_contanier_carts h3 {
+  color: #ff8b00;
+  text-align: center;
+  margin: 8px 0;
+}
+#our_team .container .cart_contanier .cart_contanier_carts p {
+  color: #939393;
+  text-align: center;
+  margin: 5px 0;
+}
+#our_team .container .cart_contanier .sosial_contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+#our_team .container .cart_contanier .sosial_contanier .sosial_contanier_boxs {
+  height: 30px;
+  width: 30px;
+  background-color: #ff8b00;
+  color: white;
+  border: 1px solid #ff8b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition-duration: 400ms;
+}
+#our_team .container .cart_contanier .sosial_contanier .sosial_contanier_boxs:hover {
+  background-color: #333;
 }/*# sourceMappingURL=main.css.map */
