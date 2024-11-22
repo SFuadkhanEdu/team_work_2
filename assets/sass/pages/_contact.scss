@@ -1,4 +1,164 @@
 #contact {
+  padding: 112px 0;
   .container {
+    .contwords {
+      text-align: center;
+      margin-top: 20px;
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 48px;
+        color: #ff8b00;
+        margin-bottom: 8px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      p {
+        font-size: 12px;
+        letter-spacing: 1.6px;
+        font-weight: bold;
+        color: #b8b8b8;
+      }
+    }
+
+    .mainconta {
+      display: flex;
+      margin-top: 20px;
+      min-height: 300px;
+    }
+
+    .contaleft {
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+
+      input,
+      textarea {
+        height: 55px;
+        border: none;
+        outline: none;
+        background: #333;
+        color: #fff;
+        padding: 6px 12px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 20px;
+        width: 100%;
+      }
+      textarea {
+        height: auto;
+        font-family: "Rubik", sans-serif;
+      }
+      .sendButton {
+        background-color: #ff8b00;
+        border: 1px solid #ff8b00;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.5;
+        border-radius: 4px;
+        text-align: center;
+        padding: 16px 48px;
+        margin-top: 20px;
+        display: flex;
+        align-self: flex-end;
+        transition-duration: 300ms;
+        cursor: pointer;
+      }
+      .sendButton:hover {
+        background-color: #d97600;
+        border: 1px solid #cc6f00;
+      }
+    }
+
+    .firstnameboxs {
+      display: flex;
+      gap: 20px;
+    }
+
+    .contaright {
+      margin: 0 auto;
+      max-width: 40%;
+      padding: 50px;
+    }
+    .rightwords h2 {
+      color: #ff8b00;
+      font-size: 32px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    .rightwords p {
+      line-height: 1.7;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #939393;
+      margin-top: 20px;
+    }
+    .getStartedBtn {
+      background-color: #ff8b00;
+      border: 1px solid #ff8b00;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.5;
+      border-radius: 4px;
+      text-align: center;
+      padding: 6px 12px;
+      margin-top: 20px;
+      display: flex;
+      align-self: flex-start;
+      transition-duration: 300ms;
+      cursor: pointer;
+    }
+    .getStartedBtn:hover {
+      background-color: #d97600;
+      border: 1px solid #cc6f00;
+    }
+  }
+}
+
+/* Media Querylər */
+@media (max-width: 768px) {
+  #contact {
+    padding: 48px 0;
+    .container {
+      .mainconta {
+        display: flex;
+        flex-direction: column;
+      }
+      .contaleft {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+        .sendButton {
+          background-color: #ff8b00;
+          border: 1px solid #ff8b00;
+          color: #fff;
+          font-size: 16px;
+          line-height: 1.5;
+          border-radius: 4px;
+          text-align: center;
+          padding: 16px 48px;
+          margin-top: 20px;
+          display: block;
+          align-self: auto;
+        }
+      }
+      .firstnameboxs {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+      }
+
+      .contaright {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+      }
+    }
   }
 }
