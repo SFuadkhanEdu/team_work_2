@@ -172,4 +172,41 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 #our_team .container .cart_contanier .sosial_contanier .sosial_contanier_boxs:hover {
   background-color: #333;
+}
+
+#questions .faq-header {
+  color: #ff9800;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 32px;
+  padding: 112px 0;
+}
+#questions .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+#questions .container .faq-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#questions .container .faq-item h3 {
+  color: #ff9800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#questions .container .faq-item p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
