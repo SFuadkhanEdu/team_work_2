@@ -410,7 +410,8 @@ nav .hiddenNavbar ul li a:hover {
   gap: 20px;
 }
 #our_team .container .cart_contanier .cart_contanier_carts {
-  width: 350px;
+  min-width: 300px;
+  max-width: 350px;
   height: 304px;
   background-color: #333;
   border-radius: 7px;
@@ -556,28 +557,34 @@ nav .hiddenNavbar ul li a:hover {
   font-size: 32px;
   padding: 112px 0;
 }
-#questions .container {
+#questions .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-#questions .container .faq-item {
+#questions .grid .faq-item {
   background-color: #222;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-#questions .container .faq-item h3 {
+#questions .grid .faq-item h3 {
   color: #ff9800;
   font-size: 18px;
   margin-bottom: 10px;
 }
-#questions .container .faq-item p {
+#questions .grid .faq-item p {
   font-size: 18px;
   color: #ddd;
   line-height: 1.6;
 }
 
+@media (max-width: 680px) {
+  #questions .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 #testimonal {
   padding: 110px 0;
 }
@@ -812,43 +819,46 @@ footer .heading {
 .footer_Form {
   display: flex;
 }
-.footer_Form .footer_Form_AboutUs {
-  width: 30%;
+.footer_Form .footer_Form_AboutUs_Features {
+  display: flex;
+}
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_AboutUs {
+  width: 50%;
   color: #fff;
 }
-.footer_Form .footer_Form_AboutUs .heading {
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_AboutUs .heading {
   margin-bottom: 20px;
 }
-.footer_Form .footer_Form_AboutUs p {
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_AboutUs p {
   color: #fff;
   line-height: 1.5;
   letter-spacing: 0.5px;
   font-size: 16px;
 }
-.footer_Form .footer_Form_Features {
-  width: 30%;
-  color: #fff;
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_Features {
   margin-left: 60px;
+  color: #fff;
 }
-.footer_Form .footer_Form_Features .heading {
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_Features .heading {
   margin-bottom: 20px;
 }
-.footer_Form .footer_Form_Features .footer_Form_Features_Links {
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_Features .footer_Form_Features_Links {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footer_Form .footer_Form_Features .footer_Form_Features_Links a {
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_Features .footer_Form_Features_Links a {
   color: #939393;
   font-size: 16px;
   font-weight: 400;
 }
-.footer_Form .footer_Form_Features .footer_Form_Features_Links a:hover {
+.footer_Form .footer_Form_AboutUs_Features .footer_Form_Features .footer_Form_Features_Links a:hover {
   color: #fff;
 }
 .footer_Form .footer_Form_and_Social {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 .footer_Form .footer_Form_and_Social .heading {
   color: #fff;
@@ -898,22 +908,28 @@ footer .heading {
   .footer_Form {
     flex-direction: column;
   }
-  .footer_Form .footer_Form_AboutUs {
+  .footer_Form .footer_Form_AboutUs_Features .footer_Form_AboutUs {
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
   }
-  .footer_Form .footer_Form_Features {
+  .footer_Form .footer_Form_AboutUs_Features .footer_Form_Features {
     width: 100%;
     margin-left: 0;
     text-align: center;
     margin-bottom: 40px;
   }
   .footer_Form .footer_Form_and_Social {
+    width: 100%;
     text-align: center;
     margin-bottom: 40px;
   }
   .footer_Form .footer_Form_and_Social_Form {
     justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .footer_Form .footer_Form_AboutUs_Features {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

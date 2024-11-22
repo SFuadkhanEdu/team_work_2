@@ -10,37 +10,39 @@ footer {
 }
 .footer_Form {
   display: flex;
-  .footer_Form_AboutUs {
-    width: 30%;
-    color: #fff;
-    .heading {
-      margin-bottom: 20px;
-    }
-    p {
+  .footer_Form_AboutUs_Features {
+    display: flex;
+    .footer_Form_AboutUs {
+      width: 50%;
       color: #fff;
-      line-height: 1.5;
-      letter-spacing: 0.5px;
-      font-size: 16px;
-    }
-  }
-
-  .footer_Form_Features {
-    width: 30%;
-    color: #fff;
-    margin-left: 60px;
-    .heading {
-      margin-bottom: 20px;
-    }
-    .footer_Form_Features_Links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      a {
-        color: #939393;
+      .heading {
+        margin-bottom: 20px;
+      }
+      p {
+        color: #fff;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
         font-size: 16px;
-        font-weight: 400;
-        &:hover {
-          color: #fff;
+      }
+    }
+
+    .footer_Form_Features {
+      margin-left: 60px;
+      color: #fff;
+      .heading {
+        margin-bottom: 20px;
+      }
+      .footer_Form_Features_Links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+          color: #939393;
+          font-size: 16px;
+          font-weight: 400;
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }
@@ -48,6 +50,7 @@ footer {
   .footer_Form_and_Social {
     display: flex;
     flex-direction: column;
+    width: 50%;
     .heading {
       color: #fff;
       margin-bottom: 20px;
@@ -96,23 +99,33 @@ footer {
 @media (max-width: 850px) {
   .footer_Form {
     flex-direction: column;
-    .footer_Form_AboutUs {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .footer_Form_Features {
-      width: 100%;
-      margin-left: 0;
-      text-align: center;
-      margin-bottom: 40px;
+    .footer_Form_AboutUs_Features {
+      .footer_Form_AboutUs {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .footer_Form_Features {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 40px;
+      }
     }
     .footer_Form_and_Social {
+      width: 100%;
       text-align: center;
       margin-bottom: 40px;
     }
     .footer_Form_and_Social_Form {
       justify-content: center;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .footer_Form {
+    .footer_Form_AboutUs_Features {
+      flex-direction: column;
     }
   }
 }

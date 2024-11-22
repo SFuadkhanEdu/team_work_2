@@ -1,19 +1,17 @@
 #questions {
-
- .faq-header{
-  color: #ff9800;
-text-align: center;
-text-transform: uppercase;
-font-weight: 500;
-line-height: 1.2;
-font-size: 32px;
-padding: 112px 0;
- }
-  .container {
+  .faq-header {
+    color: #ff9800;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 32px;
+    padding: 112px 0;
+  }
+  .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-   
 
     .faq-item {
       background-color: #222;
@@ -32,10 +30,14 @@ padding: 112px 0;
         color: #ddd;
         line-height: 1.6;
       }
-
-    
-
-
+    }
+  }
+}
+@media (max-width: 680px) {
+  #questions { 
+    .grid { 
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
   }
 }
